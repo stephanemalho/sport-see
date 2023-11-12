@@ -1,5 +1,5 @@
-import Logo from '../../assets/images/logo-runner.svg'
-import Group from '../../assets/images/Group.svg'
+import Logo from '../../../assets/images/logo-runner.svg'
+import Group from '../../../assets/images/Group.svg'
 import styled from 'styled-components'
 import { links } from './headerLinks'
 
@@ -25,7 +25,7 @@ export default Header
 
 const HeaderStyled = styled.header`
   background-color: #000;
-  height: 90px;
+  height: 10vh;
   width:100%;
   display: flex;
   justify-content: space-between;
