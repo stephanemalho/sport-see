@@ -1,6 +1,7 @@
 import { FormEvent, useState } from "react"
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import imgBg from '../../../assets/images/background-login.jpeg';
 
 const LoginForm = () => {
   //State
@@ -38,6 +39,27 @@ export default LoginForm
 const LoginFormstyled = styled.form`
   display: flex;
   flex-direction: column;
+
+  ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: url(${imgBg}) rgba(0, 0, 0, 0.7);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    background-color: #f00;
+    color: #fff;
+    font-weight: bold;
+  }
   input {
     margin: 10px 0;
     padding: 10px;

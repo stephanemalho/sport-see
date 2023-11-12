@@ -6,10 +6,10 @@ import ErrorPage from '../components/pages/ErrorPage'
 const Path = () => {
   return (
     <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/home/:userName" element={<Home />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/home/:userName" element={<Home />} />
+      <Route path="*" element={<ErrorPage />} />
+    </Routes>
   )
 }
 
