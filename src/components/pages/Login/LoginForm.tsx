@@ -57,6 +57,7 @@ const LoginFormstyled = styled.form`
     display: flex;
     justify-content: center;
     background-color: #f00;
+    border-radius: 5px;
     color: #fff;
     font-weight: bold;
   }
